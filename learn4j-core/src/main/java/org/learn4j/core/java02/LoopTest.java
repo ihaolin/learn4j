@@ -37,5 +37,26 @@ public class LoopTest {
         for (int num : nums) {
             System.out.println(num);
         }
+    
+        
+        int sum3 = 0;
+        for (int i=1; ; i++) {
+            sum3 = sum3 + i;
+            if (i == 100) {
+                // 中断整个循环
+                break;
+            }
+        }
+        System.out.println(sum3);
+    
+        int sum4 = 0;
+        for (int i=1; i<=10; i++) {
+            if (i % 2 == 0) {
+                // continue语句会结束本次循环
+                continue;
+            }
+            sum4 = sum4 + i;
+        }
+        System.out.println(sum4); // 1 + 3 + 5 + 7 + 9 = 25
     }
 }
