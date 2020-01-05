@@ -34,7 +34,7 @@ public class StringTest {
         // 空串和null串
         String s5 = null;   // s1是null
         String s6;          // 没有赋初值值，s2也是null
-        String s7 = s1;     // s3也是null
+        String s7 = s5;     // s5也是null
         String s8 = "";     // s4指向空字符串，不是null，通常叫empty
         
         // StringBuffer
