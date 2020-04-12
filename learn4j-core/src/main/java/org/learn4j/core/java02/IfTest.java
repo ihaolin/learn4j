@@ -46,6 +46,7 @@ public class IfTest {
         }
         
         // else if覆盖
+        n = 80;
         if (n >= 70) {
             // 不执行
             System.out.println("一般");
