@@ -25,4 +25,15 @@ public enum Gender {
     public String getDescription() {
         return description;
     }
+
+    public static Gender from(int value) {
+
+        for (Gender gender : Gender.values()) {
+            if (gender.value == value) {
+                return gender;
+            }
+        }
+
+        throw new IllegalArgumentException("unknown gender value: " + value);
+    }
 }
