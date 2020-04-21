@@ -3,6 +3,7 @@ package org.learn4j.core.java03;
 /**
  * 加法计算器
  */
+@Config(name = "cal", type = 2)
 public class AddCalculator {
     
     /**
